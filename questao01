@@ -1,0 +1,34 @@
+
+//-----------------------------------Respostas da Lista de Exercícios---------------------------------------------//
+
+//-----------------------------------------------Questão 01------------------------------------------------------//
+
+// a) Explicando cada linha do código
+
+// Início:
+// a = 5
+// b = 12
+
+// Após p = &a (a=5) e q = &b (b=12), ou seja, (p) aponta para (a) e (q) aponta para (b).
+
+// Após *p = *q + 3:
+// a = 15
+// b = 12
+
+// Após b = *p * 2:
+// a = 15
+// b = 30
+
+// Após p = q, o ponteiro (*p) passa a apontar para o mesmo endereço que (*q), ou seja, 
+// ambos apontam para a variável (b).
+
+// Após *p = 10:
+// a = 15
+// b = 10
+
+
+// b) Após a atribuição do ponteito (p) = (q) ambos passam a apontar para o mesmo valor que está na variável (b).
+
+
+// c) A = 15 e B = 10
+
