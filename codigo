@@ -1,0 +1,21 @@
+//----------------------Lista de Exercícios - Tipos Abstratos de Dados (Structs) e Ponteiros em C--------------------//
+
+#include <stdio.h>  
+
+int main(void) { 
+      
+    int a = 5, b = 12;          //variáveis normais (guardam números)
+    int *p, *q;                //são ponteiros (guardam endereços)
+    p = &a;                   //encaminha para o endereço (&) de (a)
+    q = &b;                  //encaminha para o endereço (&) de (b)
+   *p = *q + 3;             //valor que o ponteiro (*p) aponta que é o valor que (*q) aponta -> (b = 12) + 3, logo (a) = 15
+    b = *p * 2;            // = 15 * 2 = 30, ou seja o (*p) aponta para o novo valor (a)= 15 e (b) = 30
+    p = q;                // (p) aponta para o mesmo endereço que (q) que é (b= 12)
+   *p = 10;              // (*p) aponta para o endereço (p = q > *q = &b) e atribui o novo valor (b)= 10 
+
+printf("A = %d\n", a);      //= 15
+printf("B = %d\n", b);     //= 10
+
+return 0; 
+    
+}
