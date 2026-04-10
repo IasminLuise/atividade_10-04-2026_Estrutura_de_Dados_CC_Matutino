@@ -1,0 +1,56 @@
+
+//-----------------------------------------------Questão 02------------------------------------------------------//
+
+// a) Resposta
+
+// #include<stdio.h> 
+// struct funcionario { int codigo; 
+// char nome[100]; float salario; 
+// }; 
+ 
+// Void imprime (struct funcionario f); 
+
+// b) Resposta
+
+// int main (){ 
+// struct funcionario vet[50]; 
+// int N; do { 
+// printf(“Digite a quantidade de funcionários: “); 
+// scanf(“%d”, &N); } while (N < 1 || N > 50); return 0; 
+// } 
+
+// c) Resposta
+
+// void cadastrar () { 
+// int i;  
+// for (i = 0; i < n; i++) { 
+// printf(“Funcionário %d”, i + 1); 
+// printf(“Código: ”); 
+// scanf(“%d”, &v[i].codigo); 
+// printf(“Nome: ”);  
+// scanf(“%[^\n]”, v[i].nome); 
+// printf(“Salário: R$ %.2lf “, v[i].salario); 
+// scanf(“%f”, &v[i].salario); 
+//  } 
+// } 
+
+// d) Resposta
+
+// Void imprimirAcimaMedia (struct funcionário v[], int n){ 
+// float soma = 0, media; 
+// int i; 
+
+// for (i = 0; i < n; i++) { 
+// soma += soma = v[i].salario; 
+// }
+
+// media = soma / n;  
+// printf(“Média Salarial: R$%.2lf  “, media); 
+// printf(“Funcionários com salário acima da média: \n”); 
+
+// for (i = 0; i < n; i++) { if (v[i].salario > media) { 
+// printf(“Nome: %s – Salário: R$ %.2lf\n”, v[i].nome, v[i].salario); 
+//       } 
+//     } 
+// } 
+
