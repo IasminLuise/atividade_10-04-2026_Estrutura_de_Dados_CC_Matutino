@@ -1,0 +1,215 @@
+// QUESTÃO 1
+// #include <stdio.h>
+
+// int main() {
+//     int x = 10;
+//     int *p;
+//     p = &x; 
+    
+//     printf("Endereco de x: %p\n", (void*)&x);
+
+//     printf("Valor de x: %d\n", *p);
+
+//     printf("Endereco armazenado em p: %p\n", (void*)p);
+
+//     return 0;
+// }
+
+//QUESTÃO 2
+
+// #include <stdio.h>
+// int main(){
+//     int a = 5, b = 15;
+//     int *p1, *p2;
+//     p1 = &a;
+//     p2 = &b;
+//     *p1 = 100;
+//     *p2 = 200;
+
+
+//     printf("Valor de a: %d\n", *p1);
+//     printf("Valor de b: %d\n", *p2);
+    
+//      return 0;
+// }
+
+// QUESTÃO 3
+// #include <stdio.h>
+
+// int main() {
+//     float num1, num2, soma;
+//     float *p1 = &num1;
+//     float *p2 = &num2;
+//     float *pSoma = &soma;
+
+//     printf("Digite o primeiro numero(Decimal): ");
+//     scanf("%f", p1);
+
+//     printf("Digite o segundo numero(Decimal): ");
+//     scanf("%f", p2);
+
+//     *pSoma = *p1 + *p2;
+
+//     printf("A soma de %.2f + %.2f eh: %.2f\n", *p1, *p2, *pSoma);
+
+//     return 0;
+// }
+
+// QUESTÃO 4
+
+// #include <stdio.h>
+
+// void eleva_ao_quadrado(int *numero) { //FUNÇÃO
+//     *numero = (*numero) * (*numero);
+// }
+
+// int main() { //Metodo principal
+//     int numero = 5; //declaração da variavel numero
+
+//     printf("Valor original: %d\n", numero); //Imprime o valor definido anteriormente para a variavel numero
+
+//     eleva_ao_quadrado(&numero); //Chamamos a função, e armazenamos ela na memoria da variavel numero
+
+//     printf("Valor ao quadrado: %d\n", numero); //Devolve a variavel numero após a função
+
+//     return 0;
+// }
+
+//QUESTÃO 5
+// #include <stdio.h>
+
+// void troca(int *a, int *b) {
+//     int temp = *a; 
+//     *a = *b;
+//     *b = temp;
+// }
+
+// int main(){
+//     int a = 5;
+//     int b = 7;
+    
+//     printf("Antes: a = %d, b = %d\n", a, b);
+    
+//     troca(&a, &b);
+//     printf("Depois: a = %d, b = %d\n", a, b);
+    
+//     return 0;
+
+// }
+
+//QUESTÃO 6
+// #include <stdio.h>
+
+// void divisao(int dividendo, int divisor, int *quociente, int *resto){
+//     if(divisor !=0){
+//         *quociente = dividendo / divisor;
+//         *resto = dividendo % divisor;
+//     }
+// }
+
+// int main(){
+//     int q, r;
+//     divisao(17, 5, &q, &r);
+    
+//     printf("quociente: %d", q);
+//     printf("\n Resto: %d", r);
+    
+//     return 0;
+// }
+
+//QUESTAO 7
+
+// #include <stdio.h>
+
+// int* encontrar_maior(int *p1, int *p2) {
+//     if (*p1 > *p2) {
+//         return p1; 
+//     } else {
+//         return p2; 
+//     }
+// }
+
+// int main() {
+//     int a = 10;
+//     int b = 42;
+
+//     int *maior;
+
+//     maior = encontrar_maior(&a, &b);
+
+//     printf("O maior valor e: %d\n", *maior);
+//     printf("O endereco do maior e: %p\n", (void*)maior);
+
+//     return 0;
+// }
+
+
+
+//QUESTAO 8
+// #include <stdio.h>
+
+// struct Livro{
+//     int id;
+//     float preco;
+// }; 
+
+// int main(){
+//     struct Livro meu_livro;
+//     struct Livro *p;
+    
+//     p = &meu_livro;
+    
+//     p->id = 101;
+//     p->preco = 49.90;
+    
+//     printf("Livro Cadastrado\n");
+//     printf("ID: %d\n", p->id);
+//     printf("Preco: %.2f", p->preco);
+    
+// return 0;
+// }
+
+//QUESTAO 9
+
+// #include <stdio.h>
+
+// // Definindo os campos da estrutura
+// struct Jogador {
+//     int pontos;
+//     int nivel;
+// };
+
+// // Função que recebe um ponteiro para modificar o objeto original
+// void ganhar_ponto(struct Jogador *j){
+//     j->pontos++;
+//     j->nivel++;
+// }
+
+// int main(){
+//     // Inicializando a struct (Ponto inicial: 0 pontos, nível 1)
+//     struct Jogador player1 = {.pontos = 0, .nivel = 1};
+
+//     // Chamando a função 4 vezes
+//     ganhar_ponto(&player1);
+//     ganhar_ponto(&player1);
+//     ganhar_ponto(&player1);
+//     ganhar_ponto(&player1);
+
+//     // Exibindo os resultados atualizados
+//     printf("Status Atual | Nivel: %d \t | \t Pontos: %d\n\n", player1.nivel, player1.pontos);
+
+//     return 0;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
